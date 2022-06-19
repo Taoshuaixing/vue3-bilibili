@@ -1,6 +1,6 @@
 <template>
     <van-tabs v-model:active="active">
-        <van-tab v-for="item in navList" :key="item.id" :title="item.text">{{nums++}}</van-tab>
+        <van-tab v-for="item in navList" :key="item.id" :title="item.text"></van-tab>
     </van-tabs>
 </template>
 
@@ -13,7 +13,6 @@ interface INavItem {
 }
 const active = ref(0)
 const navList = ref<INavItem[]>([])
-const nums = ref(0)
 axios({
   url: '/navList',
   method: 'get'
