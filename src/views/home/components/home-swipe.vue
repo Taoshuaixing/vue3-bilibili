@@ -1,13 +1,6 @@
 <template>
-  <van-swipe
-    class="my-swipe"
-    :autoplay="3000"
-    indicator-color="white"
-  >
-    <van-swipe-item
-      v-for="item of list"
-      :key="item.imgSrc"
-    >
+  <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+    <van-swipe-item v-for="item of list" :key="item.imgSrc">
       <img :src="item.imgSrc" />
     </van-swipe-item>
   </van-swipe>
@@ -24,7 +17,7 @@ interface ISwiper {
 const list = ref<ISwiper[]>([])
 axios({
   url: '/swiperList',
-  method: 'get',
+  method: 'get'
 }).then((res) => {
   console.log(res.data.result)
   list.value = res.data.result

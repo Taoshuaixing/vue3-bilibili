@@ -19,6 +19,7 @@ module.exports = {
     semi: 0, // 语句可以不需要分号结尾
     // 'comma-dangle': ["error", "always-multiline"],
     'comma-dangle': 0,
+    // 'comma-dangle': 'off',
     'no-multi-spaces': 0, // 不能用多余的空格
     'no-unused-vars': [
       2,
