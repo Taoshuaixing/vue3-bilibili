@@ -8,15 +8,8 @@
 import axios from 'axios'
 import AppVideoItem from '@/components/app-video-item.vue'
 import { ref } from 'vue'
+import { IVideoItem } from '@/views/video/type'
 
-interface IVideoItem {
-  id: number
-  imgSrc: string
-  desc: string
-  playCount: string
-  commentCount: string
-  videoSrc: string
-}
 const list = ref<IVideoItem[]>([])
 axios({
   method: 'get',

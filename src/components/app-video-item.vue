@@ -1,5 +1,5 @@
 <template>
-  <router-link class="v-card" :to="'/video/${video.id}'">
+  <router-link class="v-card" :to="`/video/${video.id}`">
     <div class="card">
       <div class="card-img">
         <img :src="video.imgSrc" :alt="video.desc" class="pic" />

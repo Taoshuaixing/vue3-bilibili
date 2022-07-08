@@ -2,7 +2,9 @@
   <header class="app-header">
     <!-- logo -->
     <a class="logo" href="#">
-      <i class="iconfont Navbar_logo"></i>
+      <router-link :to="`/`">
+        <i class="iconfont Navbar_logo"></i>
+      </router-link>
     </a>
     <!-- 搜索 -->
     <a class="search" href="#">
